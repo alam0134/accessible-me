@@ -71,7 +71,7 @@ form button {
 }
 
 .main-nav li a:hover{
-  color:darkgray;
+  color: tomato;
   text-decoration: underline;
 
 }
