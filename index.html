@@ -14,7 +14,7 @@
 
 <body>
 
-  <a href="#main-content" class="skip-link" role="link">Skip to Main Content</a>
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
   
   <div class="container">
     <header class="site-header" role="banner">
@@ -31,40 +31,44 @@
     </header>
     <main id="main-content" role="main">
       <article>
-        <h1>Welcome to Jam Box</h1>
+        <h2>Welcome to Jam Box</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       </article>
-      <div class="owner">
-        <section role="region" aria-labelledby="owners-details">
-         <h1>Meet the owner</h1>
-         <ul itemscope itemtype="https://schema.org/person">
+      <div>
+        <section role="region" aria-labelledby="owners-details" id="owners-details">
+         <h2>Meet the owner</h2>
+         <ul itemscope itemtype="https://schema.org/Person">
           <li itemprop="name">Name: John Doe</li>
-          <li itemtype="https://schema.org/Organization" itemprop="founder">Title: CEO</li>
+          <li itemscope itemtype="https://schema.org/Organization" itemprop="founder">Title: CEO</li>
           <li itemprop="email">Email: johnjoe@jambox.ca</li>
           <li itemprop="telephone">Phone: 613-000-0000</li>
          </ul>
         </section>
         <section role="region" aria-labelledby="Contact-address">
-          <h1>Address</h1>
-          <p itemscope itemtype="https://schema.org/PostalAddress">
+          <h2>Address</h2>
+          <p itemscope itemtype="https://schema.org/PostalAddress" id="Contact-address">
           <span>Jambox Studios</span>
           <span itemprop="streetAddress">123 Guitar Road,</span>
-          <span itemtype="https://schema.org/Place" itemprop="addressLocality">Musicville, Danceistan</span>
+          <span itemscope itemtype="https://schema.org/Place" itemprop="addressLocality">Musicville, Danceistan</span>
           <span itemprop="postalCode">B3T 0L0</span>
           </p>
         </section>
       </div>
-      <section class="contact-section" role="form" aria-labelledby="contact-form">
-        <h1>Contact Us</h1>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="Full Name">
+  
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Email">
+  
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject">
           <b>Your Message</b>
           <textarea></textarea>
-          <button type="submit" role="button" aria-label="send massage">Send</button>
+          <button type="submit" role="button" aria-label="send message">Send</button>
         </form>
       </section>
     </main>
