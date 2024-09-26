@@ -27,7 +27,7 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://placekitten.com/1200/900" alt="Picture is not working so i can't see that and describe that" class="banner">
+      <img src="https://placekitten.com/1200/900" alt="Picture is not working so i can't see and describe that" class="banner">
     </header>
     <main id="main-content" role="main">
       <article>
@@ -38,20 +38,20 @@
       <div class="owner">
         <section role="region" aria-labelledby="owners-details">
          <h1>Meet the owner</h1>
-         <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+         <ul itemscope itemtype="https://schema.org/person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemtype="https://schema.org/Organization" itemprop="founder">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
          </ul>
         </section>
         <section role="region" aria-labelledby="Contact-address">
           <h1>Address</h1>
-          <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+          <p itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemtype="https://schema.org/Place" itemprop="addressLocality">Musicville, Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
           </p>
         </section>
       </div>
